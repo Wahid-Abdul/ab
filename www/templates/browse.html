@@ -1,0 +1,102 @@
+<style type="text/css">
+.rax{
+  position: absolute;
+  z-index: 0;
+  left:0;
+  top:0;
+  width: 100%;
+  height: 100%;
+
+}
+.rax_in
+{
+  position: relative;
+  z-index: 5;
+  left:0;
+  top:0;
+  /*width: 100%;
+  height: 100%;*/
+  opacity: 0;
+}
+.button_cover{
+  position: relative;
+}
+/* @group Blink */
+.blink {
+	-webkit-animation: blink .75s linear infinite;
+	-moz-animation: blink .75s linear infinite;
+	-ms-animation: blink .75s linear infinite;
+	-o-animation: blink .75s linear infinite;
+	 animation: blink .75s linear infinite;
+}
+@-webkit-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-moz-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-o-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+/* @end */
+/*@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loader {
+
+  border: 16px solid red;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+*/
+
+</style>
+
+<ion-view view-title="Browse">
+  <ion-content class="" >
+    <div class="tab blink">
+      Thius blibnksbadkjbsa
+    </div>
+    <div style="position:absolute;bottom:10%;width:100%;border:2px solid red;">
+
+
+      <label  class="button_cover button-royal" >
+          <span class="rax" ><center class="blink" style="align:center">Captue</center></span><input type="file" accept="video/*;capture=camcorder;capture=microphone" class="rax_in">
+      </label>
+    </div>
+
+    </div>
+  </ion-content>
+</ion-view>
